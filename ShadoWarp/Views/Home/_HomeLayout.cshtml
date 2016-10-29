@@ -14,8 +14,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-    <div id="home">
+    <div id="home" class="contener">
         <header>
+            <img class="darkshadow" src="~/Public/Img/gitr.jpg" alt="gitarka" style="height:120px; float:left; margin:5px 15px 5px 10px;">
             <h1 title="No elo!">Witamy na stronie Matiego Werpiego</h1>
             <h2>Nauka gry na gitarze</h2>
         </header>
@@ -31,22 +32,22 @@
             <img class="innershadow" src="~/Public/Img/Classical.jpg" id="obraz1" alt="gitarka" style="width:80%">
             <img class="innershadow" src="~/Public/Img/fender.jpg" id="obraz2" alt="gitarka" hidden="true" style="width:80%">
             <script>
-		$(document).ready(function(){
-            $("#but").click(function(){
-                $("#obraz1").toggle(1000);
-				$("#obraz2").toggle(1000);
-            });
-        });
+                $(document).ready(function () {
+                    $("#but").click(function () {
+                        $("#obraz1").toggle(1000);
+                        $("#obraz2").toggle(1000);
+                    });
+                });
             </script>
             <br>
             <button type="button" id="but" onmouseover="mOver(this)" onmouseout="mOut(this)">Zmien obraz</button>
             <script>
-    		function mOver(obj) {
-    		obj.innerHTML = "No zmien go!"
-    		}
-    		function mOut(obj) {
-        	obj.innerHTML = "Zmien obraz"
-    		}
+                function mOver(obj) {
+                    obj.innerHTML = "No zmien go!"
+                }
+                function mOut(obj) {
+                    obj.innerHTML = "Zmien obraz"
+                }
             </script>
             <br>
             <br>
