@@ -9,9 +9,7 @@
    box-shadow: inset 0 0 15px gold;
 }
 .darkshadow
-{
-   padding: 10px;
-   
+{   
    box-shadow: 10px 10px 15px #000;
    -webkit-box-shadow: 10px 10px 15px #000;
    -moz-box-shadow: 10px 10px 15px #000;
@@ -27,9 +25,9 @@
    -moz-box-shadow: 4px 4px 2px #ffc;
 }
 p { margin:10px; padding:20px; font-size:larger; }
-h1 { text-align:center; font-family: 'Open Sans', sans-serif; color:#0080FF; }
-h2 { text-align:center; font-family: 'Roboto', sans-serif; color:#7FC2FF; }
-h3 { text-align:left; font-family: 'Roboto', sans-serif; margin-left:50; padding:20;}
+h1 { text-align:left; font-family: 'Open Sans', sans-serif; color:royalblue; }
+h2 { text-align:left; font-family: 'Roboto', sans-serif; color:#7FC2FF; }
+h3 { text-align:left; font-family: 'Roboto', sans-serif; margin-left:50px; padding:20px;}
 body
 { 
     background-image: url('../Img/HD-Wood-Grain-Background.jpg');
@@ -38,6 +36,11 @@ body
     color:#ADD4FF;
     margin-left:10%;
     margin-right:10%;
+    border: groove #FF8040 5px;
+}
+.contener
+{
+    background-color: #121218;
 }
 header, footer 
 {
@@ -45,13 +48,10 @@ header, footer
     color: white;
     background-color: #333333;
     clear: left;
-    text-align: center;
-    border:groove;
-    border-color:#FF8040;
-    border-radius:5px;
 }
 footer a { color:yellow; text-decoration:none; }
 footer a:hover{ color:orange; }
+footer a:visited{ color:rebeccapurple}
 aside 
 {
     float: left;
@@ -69,14 +69,12 @@ article
 }
 ul 
 {
+    clear: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #444444;
-    border:groove;
-    border-color:#FF8040;
-    border-radius:5px;
 }
 
 li {float: left;}
