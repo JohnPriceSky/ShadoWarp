@@ -1,0 +1,7 @@
+.vs
+ShadoWarp.sln
+packages
+ShadoWarp/bin
+ShadoWarp/obj
+ShadoWarp/ShadoWarp.csproj
+ShadoWarp/ShadoWarp.csproj.user

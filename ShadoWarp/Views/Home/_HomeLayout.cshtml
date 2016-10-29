@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="description" content="Strona poświęcona gitarom">
+    <meta name="keywords" content="gitara gitary fender kozak lol lel omg">
+    <meta http-equiv="refresh" content="240">
+    <link rel="shortcut icon" href="~/Public/Img/MoG.png">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" type="text/css" href="~/Public/Style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Slabo+27px" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div id="home">
+        <header>
+            <h1 title="No elo!">Witamy na stronie Matiego Werpiego</h1>
+            <h2>Nauka gry na gitarze</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/Home">Home</a></li>
+                <li><a href="/Home#news" title="useless shit for now">News</a></li>
+                <li><a href="/Home#contact" title="useless shit for now">Contact</a></li>
+                <li><a href="/Home#about">About</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <img class="innershadow" src="~/Public/Img/Classical.jpg" id="obraz1" alt="gitarka" style="width:80%">
+            <img class="innershadow" src="~/Public/Img/fender.jpg" id="obraz2" alt="gitarka" hidden="true" style="width:80%">
+            <script>
+		$(document).ready(function(){
+            $("#but").click(function(){
+                $("#obraz1").toggle(1000);
+				$("#obraz2").toggle(1000);
+            });
+        });
+            </script>
+            <br>
+            <button type="button" id="but" onmouseover="mOver(this)" onmouseout="mOut(this)">Zmien obraz</button>
+            <script>
+    		function mOver(obj) {
+    		obj.innerHTML = "No zmien go!"
+    		}
+    		function mOut(obj) {
+        	obj.innerHTML = "Zmien obraz"
+    		}
+            </script>
+            <br>
+            <br>
+            Jaka jest twoja ulubiona firma produkująca gitary?
+            <form>
+                <input type="text" name="firma" style="width: 100%">
+            </form>
+            <button type="button" onclick="alert('Wali mnie to! XD')">Wyślij</button>
+        </aside>
+        <article>
+            @RenderBody()
+        </article>
+        <div id="about">
+            <footer>
+                Kup już teraz swoją
+                <a href="http://chris.com/ascii/index.php?art=movies/shrek" title="Hihi ^^">gitarę :D</a>
+                <br>
+                <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                    Click me to display Date and Time.
+                </button>
+                <p id="demo"></p>
+                <a href="#home">Won't you drag the lake and bring me home again?</a>
+                <hr />Profesionalna strona internetowa Matiego Werpiego &reg;
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

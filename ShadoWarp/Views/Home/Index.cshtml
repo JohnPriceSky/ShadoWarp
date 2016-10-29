@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+<b>Gitara</b> – instrument muzyczny z grupy strunowych szarpanych z pudłem rezonansowym, gryfem i progami na podstrunnicy.
+<br>Przeważnie ma sześć strun, lecz można spotkać również gitary z czterema, pięcioma, siedmioma, ośmioma, dziesięcioma lub dwunastoma strunami.
+<br>Instrument ten odgrywa ważną rolę w muzyce bluesowej, country, flamenco, rockowej oraz w wielu formach popu.
+<br>Instrument ten transponuje o oktawę w dół, tzn. wszystkie dźwięki zapisane w nutach brzmią na gitarze oktawę niżej niż wynikałoby to z zapisu nutowego (np. najniższa struna to E wielkie, a zapis nutowy jest wykonywany w kluczu wiolinowym jako e).
+<br>Klucz wiolinowy z dopisaną małą ósemką pod spodem nazywa się kluczem gitarowym. Gitary są wykonywane i naprawiane przez lutników, a obecnie w coraz większym stopniu maszynowo, jednak najlepszej jakości instrumenty są nadal wykonywane ręcznie bądź z dużym udziałem człowieka.
+<br>Muzyk, który gra na gitarze to gitarzysta. Muzyk grający na gitarze basowej to basista (ewent. gitarzysta basowy).
+<h3>Technika gry</h3>
+	  Na gitarze gra się palcami (opuszkami i paznokciami albo samymi opuszkami) lub kostką. Kostka jest przeznaczona głównie do gry akordami na gitarze z metalowymi strunami (akustycznej, elektrycznej). Istnieją również tzw. „pazurki” zrobione z metalu lub tworzywa sztucznego, które nakłada się na palce. Możliwe jest granie jednocześnie kostką i palcami (technika hybrydowa).
+<h3>Ankieta</h3>
+<form action="/Home/Ankieta" method="post">
+    <span>Ile lat grasz na gitarze?</span>
+    <br/>
+    <input type="radio" name="ilelat" value="1"/><span>Rok</span>
+    <br/>
+    <input type="radio" name="ilelat" value="2"/><span>Dwa</span>
+    <br/>
+    <input type="radio" name="ilelat" value="3"/><span>Trzy lata</span>
+    <br/>
+    <input type="radio" name="ilelat" value="wiecej"/><span>Więcej</span>
+    <br/>
+    <input type="submit" value="Wyslij"/>
+</form>
+<br>
+<div style="float:left;">
+    Tego akurat nie zagrasz na gitarze,
+    <br>ale i tak jest fajne<br>
+    <iframe src="https://www.youtube.com/embed/4feUSTS21-8" frameborder="0" allowfullscreen></iframe>
+</div>
+<div style="float:right;">
+    To mógłbyś zagrać<br>
+    <audio controls>
+        <source src="~/Public/Sound/04 Sleepwalking.mp3">Your browser does not support the audio tag.
+    </audio>
+    <br>A to moje xd<br><audio controls>
+        <source src="~/Public/Sound/reg.mp3">Your browser does not support the audio tag.
+    </audio>
+</div>
