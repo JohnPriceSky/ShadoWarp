@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShadoWarp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,7 +19,14 @@ namespace ShadoWarp.Controllers
         [HttpPost]
         public ActionResult Ankieta()
         {
+            AnkietaModelView m = new AnkietaModelView(Request["ilelat"]);
             ViewBag.Title = "Wynik";
+            return View(m);
+        }
+        //GET: About
+        public ActionResult About()
+        {
+            ViewBag.Title = "O autorze";
             return View();
         }
     }
