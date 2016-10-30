@@ -118,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Public\Img\back-end.png" />
+    <Content Include="Public\Img\backend.png" />
     <Content Include="Public\Img\Classical.jpg" />
     <Content Include="Public\Img\fender.jpg" />
     <Content Include="Public\Img\front-end.png" />
