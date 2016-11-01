@@ -36,10 +36,11 @@ body
     color:#ADD4FF;
     margin-left:10%;
     margin-right:10%;
-    border: groove #FF8040 5px;
+    
 }
 .contener
 {
+    border: groove #FF8040 5px;
     background-color: #121218;
 }
 header, footer 
