@@ -23,10 +23,22 @@ namespace ShadoWarp.Controllers
             ViewBag.Title = "Wynik";
             return View(m);
         }
+        //GET: News
+        public ActionResult News()
+        {
+            ViewBag.Title = "News";
+            return View();
+        }
         //GET: About
         public ActionResult About()
         {
             ViewBag.Title = "O autorze";
+            return View();
+        }
+        //GET: LogIn
+        public ActionResult LogIn()
+        {
+            ViewBag.Title = "Zaloguj się";
             return View();
         }
     }

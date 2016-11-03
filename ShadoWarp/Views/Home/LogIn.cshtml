@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "LogIn";
+    Layout = "~/Views/Home/_HomeLayout.cshtml";
+}
+
+<h2>Log In</h2>
+<form action="" method="post">
+    <fieldset style="background-color:darkslategray; padding:5%">
+        <legend>Zaloguj się:</legend>
+        <span>Nazwa użytkownika:</span><br />
+        <input type="text" name="username" required><br/>
+        <span>Hasło:</span><br />
+        <input type="password" name="password" required><br /><br />
+        <input type="checkbox" name="Remember" /><span>Zapamiętaj mnie</span><br />
+        <input type="submit" value="Zaloguj">
+    </fieldset>
+</form>
+
