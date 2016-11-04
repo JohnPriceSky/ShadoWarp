@@ -34,9 +34,20 @@
             <img class="innershadow" src="~/Public/Img/fender.jpg" id="obraz2" alt="gitarka" hidden style="width:80%">
             <script>
                 $(document).ready(function () {
+                        //dostosowanie wysokosci article'a
+                    if ($("aside").height() > $("article").height()) {
+                        $("article").css("height", $("aside").height());
+                    }
                     $("#but").click(function () {
                         $("#obraz1").toggle(1000);
                         $("#obraz2").toggle(1000);
+                        setTimeout(function () {
+                            if ($("aside").height() > $("article").height()) {
+                                $("article").css("height", $("aside").height());
+                                window.alert("poszlo");
+                            }
+                        }, 3000);
+                        
                     });
                 });
             </script>
@@ -58,14 +69,7 @@
             </form>
             <button type="button" onclick="alert('Wali mnie to! XD')">Wyślij</button>
         </aside>
-        <script>
-            $(document).ready(function () {
-                //alert("Aside: " + $("aside").height() + "\nArticle: " + $("article").height());
-                if ($("aside").height() > $("article").height()){
-                    $("article").css("height", $("aside").height());
-                }
-            })
-        </script>
+      
         <article>
             @RenderBody()
         </article>
