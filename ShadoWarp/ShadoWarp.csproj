@@ -124,6 +124,7 @@
     <Content Include="Public\Img\front-end.png" />
     <Content Include="Public\Img\HD-Wood-Grain-Background.jpg" />
     <Content Include="Public\Img\MoG.png" />
+    <Content Include="Public\Img\taylor.jpg" />
     <Content Include="Public\Sound\04 Sleepwalking.mp3" />
     <Content Include="Public\Sound\reg.mp3" />
     <Content Include="Public\Style\style.css" />
@@ -150,6 +151,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Ankieta.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\News.cshtml" />
+    <Content Include="Views\Home\LogIn.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

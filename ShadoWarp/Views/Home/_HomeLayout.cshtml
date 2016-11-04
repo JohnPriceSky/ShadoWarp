@@ -23,13 +23,14 @@
         <nav>
             <ul>
                 <li><a href="/Home">Strona główna</a></li>
-                <li><a href="/Home#news" title="useless shit for now">News</a></li>
-                <li><a href="/Home#contact" title="useless shit for now">Kontakt</a></li>
+                <li><a href="/Home/News" title="useless shit for now">News</a></li>
+                <li><a href="/Home/Contact" title="useless shit for now">Kontakt</a></li>
                 <li><a href="/Home/About">O autorze</a></li>
+                <li style="float:right; background-color:orangered"><a href="/Home/LogIn">Zaloguj się</a></li>
             </ul>
         </nav>
         <aside>
-            <img class="innershadow" src="~/Public/Img/Classical.jpg" id="obraz1" alt="gitarka" style="width:80%">
+            <img class="innershadow" src="~/Public/Img/taylor.jpg" id="obraz1" alt="gitarka" style="width:80%">
             <img class="innershadow" src="~/Public/Img/fender.jpg" id="obraz2" alt="gitarka" hidden style="width:80%">
             <script>
                 $(document).ready(function () {
@@ -57,6 +58,14 @@
             </form>
             <button type="button" onclick="alert('Wali mnie to! XD')">Wyślij</button>
         </aside>
+        <script>
+            $(document).ready(function () {
+                //alert("Aside: " + $("aside").height() + "\nArticle: " + $("article").height());
+                if ($("aside").height() > $("article").height()){
+                    $("article").css("height", $("aside").height());
+                }
+            })
+        </script>
         <article>
             @RenderBody()
         </article>
