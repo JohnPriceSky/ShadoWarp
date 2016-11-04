@@ -124,6 +124,7 @@
     <Content Include="Public\Img\front-end.png" />
     <Content Include="Public\Img\HD-Wood-Grain-Background.jpg" />
     <Content Include="Public\Img\MoG.png" />
+    <Content Include="Public\Img\taylor.jpg" />
     <Content Include="Public\Sound\04 Sleepwalking.mp3" />
     <Content Include="Public\Sound\reg.mp3" />
     <Content Include="Public\Style\style.css" />
