@@ -29,6 +29,12 @@ namespace ShadoWarp.Controllers
             ViewBag.Title = "News";
             return View();
         }
+        //GET: Contact
+        public ActionResult Contact()
+        {
+            ViewBag.Title = "Skontaktuj się z nami";
+            return View();
+        }
         //GET: About
         public ActionResult About()
         {
