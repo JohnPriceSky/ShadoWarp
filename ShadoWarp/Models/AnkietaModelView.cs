@@ -45,12 +45,12 @@ namespace ShadoWarp.Models
                     komentarz = string.Format("No... jakby to powiedzieć..., jakiś okrutnik :/");
                     break;
             }
-            StreamWriter sw = new StreamWriter("wyniki.txt");
+            /*StreamWriter sw = new StreamWriter("~/AnkietaWyn/wyniki.txt");
             sw.WriteLine(glosRok);
             sw.WriteLine(glosDwa);
             sw.WriteLine(glosTrzy);
             sw.WriteLine(glosWiecej);
-            sw.Close();
+            sw.Close();*/
         }
     }
 }
