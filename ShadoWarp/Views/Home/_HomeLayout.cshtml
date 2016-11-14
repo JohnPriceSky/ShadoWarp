@@ -31,35 +31,13 @@
         </nav>
         <aside>
             <img class="innershadow" src="~/Public/Img/taylor.jpg" id="obraz1" alt="gitarka" style="width:80%">
-            <img class="innershadow" src="~/Public/Img/fender.jpg" id="obraz2" alt="gitarka" hidden style="width:80%">
             <script>
                 $(document).ready(function () {
                         //dostosowanie wysokosci article'a
                     if ($("aside").height() > $("article").height()) {
                         $("article").css("height", $("aside").height());
                     }
-                    $("#but").click(function () {
-                        $("#obraz1").toggle(1000);
-                        $("#obraz2").toggle(1000);
-                        setTimeout(function () {
-                            if ($("aside").height() > $("article").height()) {
-                                $("article").css("height", $("aside").height());
-                                window.alert("poszlo");
-                            }
-                        }, 3000);
-                        
-                    });
                 });
-            </script>
-            <br>
-            <button type="button" id="but" onmouseover="mOver(this)" onmouseout="mOut(this)">Zmien obraz</button>
-            <script>
-                function mOver(obj) {
-                    obj.innerHTML = "No zmien go!"
-                }
-                function mOut(obj) {
-                    obj.innerHTML = "Zmien obraz"
-                }
             </script>
             <br>
             <br>
